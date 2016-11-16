@@ -405,6 +405,7 @@ img {
   color: #fff; }
 
 .header {
+  height: 290vh;
   position: relative; }
   .header__bg {
     min-width: 100%;
