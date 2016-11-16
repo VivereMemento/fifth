@@ -1,0 +1,14 @@
+.logo {
+  margin-top: 110px;
+
+  &__link {
+    display: block;
+    width: 42%;
+    margin: 0 auto;
+    
+
+    &:hover {
+      text-decoration: none;
+    }
+  }
+}

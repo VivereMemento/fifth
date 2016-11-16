@@ -1,0 +1,66 @@
+.menu {
+  margin-top: 155px;
+  padding: 0 18px;
+  @include clr;
+  text-align: justify;
+
+  &:after {
+    /*эмуляция второй строчки, чтобы можно было 
+    выравнять текст по значению justify*/
+    content: "";
+    display: inline-block;
+    width: 100%;
+    height: 0;
+  }
+
+  &-part {
+    float: left;
+    margin-right: 39px;
+
+    &:last-child {
+      margin-right: 0;
+    }
+
+    &_bottom {
+      margin-top: 200px;
+    }
+  }
+
+  &__link {
+    width: 100%;
+    height: 100%;
+    font: 400 1.700em/30px $ffL;
+    display: inline-block;
+    border-radius: 30px;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+
+  &__img-wrap {
+    position: absolute;
+    left: 47px;
+    top: 11px;
+
+    &_about  {
+      @include sprite($about);
+    }
+
+    &_portfolio {
+      @include sprite($portfolio);
+    }
+
+    &_contact {
+      @include sprite($contact);
+    }
+  }
+
+  &__text{
+    width: 100%;
+    color: #fff;
+    text-align: center;
+    position: absolute;
+    bottom: 0;
+  }
+}

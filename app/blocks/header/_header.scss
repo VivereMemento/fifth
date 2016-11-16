@@ -1,0 +1,90 @@
+.header {
+  position: relative;
+
+  &__bg {
+    min-width: 100%;
+    min-height: 100%;
+  }
+
+  &-wrap {
+    position: relative;
+  }
+}
+
+.pcture-wrap {
+  width: 100%;
+  height: 1100px;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.heading {
+  margin-top: 75px;
+
+  &-wrap, &-sub-wrap {
+    text-align: center;
+  }
+
+  &-sub-wrap {
+    margin-top: 30px;
+  }
+
+  &-sub__text {
+    font: 300 2.500em/30px $ffL;
+    color: #fff;
+  }
+}
+
+.scroll {
+  position: absolute;
+  bottom: -111px;
+  left: 46%;
+  background: fade-out(#fff, .8) url(../img/arrow.png) no-repeat center center;
+
+  &:hover, &:hover .hexahedron-rot {
+    border-color: $purple;
+    background-color: transparent;
+  }
+
+  &__link {
+    display: block;
+    width: 100%;
+    height: 100%;
+    // background: fade-out(#fff, .8);
+  }
+}
+
+.hexahedron_scroll-mods {
+  width: 85px;
+  height: 50px;
+  border-radius: 13px;
+}
+
+.hexahedron-rot_scroll-mods_br-r {
+  border-radius: 5px 10px 5px 10px;
+
+  &:before {
+    top: -27px;
+    left: -99px;
+  }
+
+  &:after {
+    bottom: -27px;
+    right: -99px;
+  }
+}
+
+.hexahedron-rot_scroll-mods_br-l {
+  border-radius: 10px 5px 10px 5px;
+
+  &:before {
+    top: -8px;
+    left: -99px;
+  }
+
+  &:after {
+    bottom: -8px;
+    right: -99px;
+  }
+}
