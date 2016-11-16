@@ -1,5 +1,5 @@
 .header {
-  height: 290vh;
+  padding: 110px 0 209px 0;
   position: relative;
 
   &__bg {
@@ -32,7 +32,7 @@
   }
 
   &-sub__text {
-    font: 300 2.500em/30px $ffL;
+    font: 300 1.500em/30px $ffL;
     color: #fff;
   }
 }

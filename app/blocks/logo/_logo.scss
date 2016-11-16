@@ -1,5 +1,4 @@
 .logo {
-  margin-top: 110px;
 
   &__link {
     display: block;
@@ -11,4 +10,14 @@
       text-decoration: none;
     }
   }
+}
+
+.logo_nav-mods {
+	margin-top: 0;
+	float: left;
+}
+
+.logo__link-nav-mods {
+	width: 15%;
+	margin: 0;
 }

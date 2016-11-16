@@ -2,20 +2,10 @@
   margin-top: 155px;
   padding: 0 18px;
   @include clr;
-  text-align: justify;
-
-  &:after {
-    /*эмуляция второй строчки, чтобы можно было 
-    выравнять текст по значению justify*/
-    content: "";
-    display: inline-block;
-    width: 100%;
-    height: 0;
-  }
 
   &-part {
     float: left;
-    margin-right: 39px;
+    margin-right: 37px;
 
     &:last-child {
       margin-right: 0;
@@ -29,7 +19,7 @@
   &__link {
     width: 100%;
     height: 100%;
-    font: 400 1.700em/30px $ffL;
+    font: 400 1.125em/30px $ffL;
     display: inline-block;
     border-radius: 30px;
 
