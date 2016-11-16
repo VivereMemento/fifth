@@ -418,12 +418,12 @@ img {
   color: #fff; }
 
 .header {
-  padding: 110px 0 209px 0;
   position: relative; }
   .header__bg {
     min-width: 100%;
     min-height: 100%; }
   .header-wrap {
+    padding-top: 110px;
     position: relative; }
 
 .pcture-wrap {

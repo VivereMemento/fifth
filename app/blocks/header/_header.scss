@@ -1,5 +1,4 @@
 .header {
-  padding: 110px 0 209px 0;
   position: relative;
 
   &__bg {
@@ -8,6 +7,7 @@
   }
 
   &-wrap {
+    padding-top: 110px;
     position: relative;
   }
 }
