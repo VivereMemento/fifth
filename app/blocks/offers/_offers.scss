@@ -1,0 +1,89 @@
+.offers {
+  padding: 200px 0 225px 0;
+  background-color: #eeeeee;
+
+  &__link {
+    display: block;
+    position: relative;
+
+    &:hover {
+      text-decoration: none;
+    }
+  }
+
+  &__item {
+
+    &__img {
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      margin: auto;
+
+      &-heart {
+        @include sprite($heart);
+      }
+
+      &-diamond {
+        @include sprite($diamond);
+      }
+
+      &-cup {
+        @include sprite($cup);
+      }
+
+      &-phone {
+        @include sprite($phone);
+      }
+    }
+
+    &-content {
+      @include clr;
+      margin-top: 78px;
+    }
+
+    &:hover, 
+    &:hover .hexahedron_offers-mods, 
+    &:hover .hexahedron-rot,
+    &:hover .offers__title,
+    &:hover .offers__text {
+      color: $purple;
+      border-color: $purple;
+      background-color: transparent;
+    }
+  }
+
+  &__title-wrap {
+    margin-bottom: 30px;
+  }
+
+  &__title {
+    font: 300 1.600em/30px $ffL;
+    color: #676767;
+    text-align: center;
+  }
+
+
+  &__text {
+    font: 300 1em/30px $ffL;
+    color: #676767;
+    text-align: center;
+  }
+}
+
+.hexahedron_offers-mods {
+  margin-left: 65px;
+  background: transparent;
+  border-left: 4px solid #ccd0d2;
+  border-right: 4px solid #ccd0d2;
+}
+
+.hexahedron-rot_offers-mods {
+  border-left: 4px solid #ccd0d2;
+  border-right: 4px solid #ccd0d2;
+  &:before,
+  &:after {
+    display: none;
+  }
+}
