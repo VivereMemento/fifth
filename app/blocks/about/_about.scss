@@ -1,0 +1,46 @@
+.about {
+  padding: 123px 0 230px 0;
+
+  &-wrap {
+    margin-top: 135px;
+    @include clr;
+  }
+
+  &__pic{
+    width: 57%;
+    float: left;
+  }
+
+  &__content {
+    width: 43%;
+    padding: 9px 0 0 35px;
+    float: left;
+  }
+
+  &__text {
+    font: 300 1em/36px $ffL;
+    color: #676767;
+    text-align: left;
+  }
+
+  &__btn-wrap {
+    margin-top: 113px;
+    text-align: left;
+  }
+
+  &__btn {
+    display: inline-block;
+    padding: 25px 63px;
+    font: 300 1.250em/20px $ffL;
+    color: #fff;
+    background-color: $purple;
+    border-radius: 5px;
+    box-shadow: 0 5px 0 #6b2e68;
+
+    &:hover {
+      color: #fff;
+      text-decoration: none;
+
+    }
+  }
+}

@@ -8,9 +8,40 @@
   letter-spacing: 1px;
 }
 
+.title-wrap {
+  text-align: center;
+}
+
 .title {
-  font: 300 3.000em/36px $ffE;
+  display: inline-block;
+  font: 600 3.000em/115px $ffE;
   color: #333;
+  letter-spacing: 1px;
+  position: relative;
+
+  &:before, &:after {
+    display: block;
+    content: "";
+    width: 30px;
+    height: 30px;
+    border: 1px solid transparent;
+    
+    position: absolute;
+  }
+
+  &:before {
+    border-left-color: $purple;
+    border-bottom-color: $purple;
+    bottom: 0;
+    left: -30px;
+  }
+
+  &:after {
+    border-right-color: $purple;
+    border-top-color: $purple;
+    top: 0;
+    right: -30px;
+  }
 }
 
 .visible {visibility: visible;}

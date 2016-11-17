@@ -24,9 +24,32 @@
   color: #fff;
   letter-spacing: 1px; }
 
+.title-wrap {
+  text-align: center; }
+
 .title {
-  font: 300 3em/36px "Exisntence", Arial, sans-serif;
-  color: #333; }
+  display: inline-block;
+  font: 600 3em/115px "Existence", Arial, sans-serif;
+  color: #333;
+  letter-spacing: 1px;
+  position: relative; }
+  .title:before, .title:after {
+    display: block;
+    content: "";
+    width: 30px;
+    height: 30px;
+    border: 1px solid transparent;
+    position: absolute; }
+  .title:before {
+    border-left-color: #9f449b;
+    border-bottom-color: #9f449b;
+    bottom: 0;
+    left: -30px; }
+  .title:after {
+    border-right-color: #9f449b;
+    border-top-color: #9f449b;
+    top: 0;
+    right: -30px; }
 
 .visible {
   visibility: visible; }
@@ -699,6 +722,43 @@ img {
   border-right: 4px solid #ccd0d2; }
   .hexahedron-rot_offers-mods:before, .hexahedron-rot_offers-mods:after {
     display: none; }
+
+.about {
+  padding: 123px 0 230px 0; }
+  .about-wrap {
+    margin-top: 135px;
+    *zoom: 1; }
+    .about-wrap:after {
+      content: " ";
+      display: table;
+      clear: both; }
+  .about__pic {
+    width: 57%;
+    float: left; }
+  .about__content {
+    width: 43%;
+    padding: 9px 0 0 35px;
+    float: left; }
+  .about__text {
+    font: 300 1em/36px "Lato", Arial, sans-serif;
+    color: #676767;
+    text-align: left; }
+  .about__btn-wrap {
+    margin-top: 113px;
+    text-align: left; }
+  .about__btn {
+    display: inline-block;
+    padding: 25px 63px;
+    font: 300 1.25em/20px "Lato", Arial, sans-serif;
+    color: #fff;
+    background-color: #9f449b;
+    -webkit-border-radius: 5px;
+            border-radius: 5px;
+    -webkit-box-shadow: 0 5px 0 #6b2e68;
+            box-shadow: 0 5px 0 #6b2e68; }
+    .about__btn:hover {
+      color: #fff;
+      text-decoration: none; }
 
 .footer {
   height: 580px;
