@@ -3,21 +3,21 @@
 
   &__bg {
     min-width: 100%;
-    min-height: 100%;
+    height: 100%;
   }
 
   &-wrap {
+    width: 100%;
     padding-top: 110px;
-    position: relative;
+    position: absolute;
+    top: 0;
+    left: 0;
   }
 }
 
 .pcture-wrap {
   width: 100%;
   height: 1100px;
-  position: absolute;
-  top: 0;
-  left: 0;
 }
 
 .heading {
@@ -29,6 +29,7 @@
 
   &-sub-wrap {
     margin-top: 30px;
+    letter-spacing: .4px;
   }
 
   &-sub__text {
@@ -38,21 +39,30 @@
 }
 
 .scroll {
-  position: absolute;
-  bottom: -111px;
-  left: 46%;
-  background: fade-out(#fff, .8) url(../img/arrow.png) no-repeat center center;
+  width: 100%;
+  height: 145px;
+  position: relative;
+  
 
-  &:hover, &:hover .hexahedron-rot {
-    border-color: $purple;
-    background-color: transparent;
+  &-wrap {
+    margin: auto;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: fade-out(#fff, .8) url(../img/arrow.png) no-repeat center center;
+
+    &:hover, &:hover .hexahedron-rot {
+      border-color: $purple;
+      background-color: transparent;
+    }
   }
 
   &__link {
     display: block;
     width: 100%;
     height: 100%;
-    // background: fade-out(#fff, .8);
   }
 }
 

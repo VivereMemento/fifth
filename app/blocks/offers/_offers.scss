@@ -22,7 +22,7 @@
       margin: auto;
 
       &-heart {
-        @include sprite($heart);
+        @include sprite($diamond);
       }
 
       &-diamond {
@@ -38,12 +38,15 @@
       }
     }
 
+  &:hover &__img {
+    @include sprite($heart);
+  }
+
     &-content {
       @include clr;
-      margin-top: 78px;
+      margin-top: 80px;
     }
-
-    &:hover, 
+ 
     &:hover .hexahedron_offers-mods, 
     &:hover .hexahedron-rot,
     &:hover .offers__title,
@@ -55,11 +58,11 @@
   }
 
   &__title-wrap {
-    margin-bottom: 30px;
+    margin-bottom: 35px;
   }
 
   &__title {
-    font: 300 1.600em/30px $ffL;
+    font: 400 1.600em/30px $ffL;
     color: #676767;
     text-align: center;
   }
